@@ -7,4 +7,5 @@ export const Wrapper = styled.div`
     background-color: ${theme.colors.red};
     color: white;
     font-family: ${theme.font.family};
+    font-weight: 600;
 `
