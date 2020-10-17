@@ -23,9 +23,9 @@ export const Hamburger = styled.img`
     position: absolute;
     right: 38px;
     top: 39px;
-    /* @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
         display: none;
-    }; */
+    };
 `;
 
 export const NextLink = styled.a`
@@ -34,7 +34,7 @@ export const NextLink = styled.a`
     color: black;
     text-decoration: none;
     font-weight: lighter;
-    ${theme.breakpoint('xs', 'md')`
+    ${theme.breakpoint('xs', 'lg')`
         margin-bottom: 15px;
         font-size: 24px;
     `}
@@ -45,7 +45,7 @@ export const Logo = styled.img`
 `;
 
 export const LinkWrapper = styled.div` 
-    ${theme.breakpoint('xs', 'md')`
+    ${theme.breakpoint('xs', 'lg')`
         position: fixed;
         top: 0px;
         height: 100vh;
@@ -63,16 +63,17 @@ export const LinkWrapper = styled.div`
 `;
 
 export const ItemsToRight = styled.div`
-    ${theme.breakpoint('xs', 'md')`
+    ${theme.breakpoint('xs', 'lg')`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         margin-bottom: 74px`
     }
+    display: inline-block;
 `;
 export const Overlay = styled.div`
-    ${theme.breakpoint('xs', 'md')`
+    ${theme.breakpoint('xs', 'lg')`
         position: fixed;
         top: 0px;
         background-color: black;
@@ -89,7 +90,7 @@ export const Cross = styled.img`
     position: absolute;
     top: 39px;
     right: 38px;
-    ${theme.breakpoint('md')`
+    ${theme.breakpoint('lg')`
         display: none;
     `}
 `;
