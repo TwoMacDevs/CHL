@@ -8,7 +8,6 @@ export const Grid = styled.div`
     max-width: 1125px;
     margin: 100px auto;
     grid-column-gap: 15px;
-    grid-row-gap: 45px;
     ${theme.breakpoint('md')`
         grid-template-columns: repeat(12, 1fr);
     `}
