@@ -43,7 +43,7 @@ export default function Home() {
       <FeatureGrid reverse src={'/buildings.png'} title={'This is the title'} picture>
         <BodyText>This is extra information</BodyText>
       </FeatureGrid>
-      <SpannableGrid items={items} span={4} mobileSpan={6} mobileWrapperGridColumn={'2 / 7'}>
+      <SpannableGrid items={items} span={4} mobileSpan={6} mobileWrapperGridColumn={'2 / 7'} WrapperGridColumn>
       </SpannableGrid>
     </Layout>
   )
