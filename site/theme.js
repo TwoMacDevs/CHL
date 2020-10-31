@@ -4,7 +4,11 @@ export default {
       red: '#B02834',
     },
     font: {
-      family: 'myriad-pro'
+      family: 
+        {
+          primary: 'myriad-pro',
+          secondary: 'urw-antiqua'
+        }
     },
     breakpoint: createBreakpoint({
       xs: 0,

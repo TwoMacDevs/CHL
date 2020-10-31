@@ -29,7 +29,7 @@ export const Hamburger = styled.img`
 `;
 
 export const NextLink = styled.a`
-    font-family: ${theme.font.family},sans-serif;
+    font-family: ${theme.font.family.primary},sans-serif;
     margin-right: 25px;
     color: black;
     text-decoration: none;
