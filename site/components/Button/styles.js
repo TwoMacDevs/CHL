@@ -6,6 +6,6 @@ export const Wrapper = styled.div`
     padding: 11px 17px;
     background-color: ${theme.colors.red};
     color: white;
-    font-family: ${theme.font.family};
+    font-family: ${theme.font.family.primary};
     font-weight: 600;
 `
