@@ -1,13 +1,18 @@
 import React from 'react';
-import { Wrapper, FeaturedItemAsset, FeaturedItemDetails, TextWrapper, Title } from './styles';
+import { Wrapper, FeaturedItemAsset, FeaturedItemDetails, TextWrapper, Title, TitleWrapper } from './styles';
 
-export const FeatureGrid = ({ children, src, title,reverse, ...props }) => {
+export const FeatureGrid = ({ children, src, title, reverse, picture, ...props }) => {
 	return ( 
 		<Wrapper {...props}>
+			<TitleWrapper mobile reverse={reverse}>
+				<Title >{title}</Title>
+			</TitleWrapper>
 			{picture ? <FeaturedItemAsset src={src} reverse={reverse}></FeaturedItemAsset> : 'include video'}
 			<FeaturedItemDetails reverse={reverse}>
 				<TextWrapper>
-					<Title>{title}</Title>
+					<TitleWrapper reverse={reverse}>
+						<Title >{title}</Title>
+					</TitleWrapper>
 					{children}
 				</TextWrapper>
 			</FeaturedItemDetails>
