@@ -17,6 +17,9 @@ export const Grid = styled.div`
     max-width: 1125px;
     margin: 100px auto;
     grid-column-gap: 15px;
+    grid-row-gap: 45px;
+    padding: 0px 15px;
+    box-sizing: border-box;
     ${theme.breakpoint('md')`
 >>>>>>> dc8e262417c2a525eb2dbd6ab663f73916dcceee
         grid-template-columns: repeat(12, 1fr);
@@ -24,5 +27,11 @@ export const Grid = styled.div`
 `;
 
 export const BodyText = styled.p`
+<<<<<<< HEAD
 	font-family: "myriad-pro";
 `;
+=======
+    font-family: ${theme.font.family.primary};
+    font-weight: 300;
+`;
+>>>>>>> d0db0c03174564c9bc3e1cccd74ee7f4983d717b
