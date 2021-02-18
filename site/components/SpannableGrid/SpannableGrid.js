@@ -6,7 +6,7 @@ export const SpannableGrid = ({ children, items, span, mobileSpan, WrapperGridCo
 	return (
 		<Grid {...props}>
 			{items.map(({image, title, subtitle, description}, key) => 
-				<SpannableItem span={span} mobileSpan={mobileSpan} galleryItemsColumns={galleryItemsColumns}>
+				<SpannableItem key={key} span={span} mobileSpan={mobileSpan} galleryItemsColumns={galleryItemsColumns}>
 					{image && <Img imageGridColumn={imageGridColumn} mobileImageGridColumn={mobileImageGridColumn} gridRowOne={gridRowOne} src={image}></Img>}
 					<ImageDetailsWrapper gridRowOne WrapperGridColumn={WrapperGridColumn} mobileWrapperGridColumn={mobileWrapperGridColumn}>
 						<ImageTitleWrapper >
