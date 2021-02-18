@@ -41,6 +41,7 @@ export const Title = styled.p`
     font-size: 42px;
     margin: 0px;
     font-weight: 900;
+    font-family: ${theme.font.family.secondary}
 `
 export const TitleMobileWrapper = styled.div`
     ${theme.breakpoint('md')`
