@@ -3,7 +3,6 @@ import Link from 'next/link';
 import theme from '../../theme';
 
 export const OuterWrapper = styled.div`
-    /* position: fixed; */
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
     background-color: white;

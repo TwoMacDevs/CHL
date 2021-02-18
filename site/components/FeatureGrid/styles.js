@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(1,1fr);
     max-width: 1125px;
-    margin: 100px auto;
+    margin: 100px auto 0px auto;
     grid-column-gap: 15px;
     ${theme.breakpoint('md')`
         grid-template-columns: repeat(12, 1fr);
@@ -40,6 +40,7 @@ export const Title = styled.p`
     display: inline-block;
     font-size: 42px;
     margin: 0px;
+    font-style: italic;
     font-weight: 900;
     font-family: ${theme.font.family.secondary}
 `
