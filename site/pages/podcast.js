@@ -1,6 +1,10 @@
 import Layout from '../components/Layout/'
 import { SpannableGrid } from '../components/SpannableGrid/SpannableGrid'
-import { Grid } from '../styles';
+import { BodyText, Grid, SmallText } from '../styles';
+import { FeatureGrid } from '../components/FeatureGrid/FeatureGrid'
+import Button from '../components/Button';
+import { SimpleCenteredFeature } from '../components/SimpleCenteredFeature/SimpleCenteredFeature'
+import { CenteredBodyText } from '../styles'
 
 export default function About() {
     const items = [
@@ -43,8 +47,19 @@ export default function About() {
       ];
     return (
         <Layout>
-            <SpannableGrid  titleGrid={'Team'} items={items} span={4} mobileSpan={6} imageGridColumn={'1 / 4'} mobileImageGridColumn={'1 / 3'} mobileWrapperGridColumn={'3 / -1'} style={{paddingBottom: '100px'}}>
-            </SpannableGrid>  
+            <FeatureGrid reverse src={'/buildings.png'} title={'London Walks'} picture>
+              <div>
+              <SmallText>INTERVIEW</SmallText>
+              </div>
+            </FeatureGrid>
+            <SimpleCenteredFeature>
+            <CenteredBodyText>
+              Christian Heritage London exists to draw attention to the advances of the gospel in this city’s history in order to bless the present and shape the future.
+            </CenteredBodyText>
+            <Button>Subscribe</Button> 
+            </SimpleCenteredFeature>
+            <SpannableGrid titleGrid={' '} items={items} span={4} mobileSpan={3} style={{paddingBottom: '100px'}}>
+            </SpannableGrid>
         </Layout>
     )
 }

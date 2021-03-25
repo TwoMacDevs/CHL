@@ -5,7 +5,7 @@ export const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	max-width: 1125px;
-	margin: 100px auto;
+	margin: ${(titleGrid) => titleGrid ? '0px auto' : '100px auto'};
 	grid-column-gap: 15px;
 	grid-row-gap: 45px;
 

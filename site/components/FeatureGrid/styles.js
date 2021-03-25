@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(1,1fr);
     max-width: 1125px;
-    margin: 100px auto 0px auto;
+    margin: 100px auto 30px auto;
     grid-column-gap: 15px;
     ${theme.breakpoint('md')`
         grid-template-columns: repeat(12, 1fr);
